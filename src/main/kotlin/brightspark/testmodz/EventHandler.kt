@@ -6,5 +6,6 @@ import com.zerra.common.util.Logging
 
 object EventHandler: Logging() {
     @Event
+    @JvmStatic
     fun onKeyEvent(event: KeyInputEvent) = info("Key: ${event.keyCode}")
 }
